@@ -18,6 +18,11 @@
 		595025B72AEBD8790084EDCF /* myCollectionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595025B62AEBD8790084EDCF /* myCollectionview.swift */; };
 		595025B92AEC02C60084EDCF /* main_medicine_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595025B82AEC02C60084EDCF /* main_medicine_page.swift */; };
 		5982C43D2AEE595000B51CC6 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982C43C2AEE595000B51CC6 /* MyCollectionViewCell.swift */; };
+		59D1E6DD2AF185EE0099BDC9 /* appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1E6DC2AF185EE0099BDC9 /* appointment.swift */; };
+		59D1E6DF2AF186270099BDC9 /* Doctor_appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1E6DE2AF186270099BDC9 /* Doctor_appointment.swift */; };
+		59D1E6E12AF1928A0099BDC9 /* labtests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1E6E02AF1928A0099BDC9 /* labtests.swift */; };
+		59D1E6E32AF1949C0099BDC9 /* healthid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1E6E22AF1949C0099BDC9 /* healthid.swift */; };
+		59D1E6E52AF19D4C0099BDC9 /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1E6E42AF19D4C0099BDC9 /* Insurance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		595025B62AEBD8790084EDCF /* myCollectionview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCollectionview.swift; sourceTree = "<group>"; };
 		595025B82AEC02C60084EDCF /* main_medicine_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_medicine_page.swift; sourceTree = "<group>"; };
 		5982C43C2AEE595000B51CC6 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		59D1E6DC2AF185EE0099BDC9 /* appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appointment.swift; sourceTree = "<group>"; };
+		59D1E6DE2AF186270099BDC9 /* Doctor_appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor_appointment.swift; sourceTree = "<group>"; };
+		59D1E6E02AF1928A0099BDC9 /* labtests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labtests.swift; sourceTree = "<group>"; };
+		59D1E6E22AF1949C0099BDC9 /* healthid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthid.swift; sourceTree = "<group>"; };
+		59D1E6E42AF19D4C0099BDC9 /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,11 @@
 				3FBB1EE82AD80E3D00ADC846 /* resetpage.swift */,
 				595025B42AEBD2940084EDCF /* medicines.swift */,
 				595025B82AEC02C60084EDCF /* main_medicine_page.swift */,
+				59D1E6DC2AF185EE0099BDC9 /* appointment.swift */,
+				59D1E6DE2AF186270099BDC9 /* Doctor_appointment.swift */,
+				59D1E6E02AF1928A0099BDC9 /* labtests.swift */,
+				59D1E6E22AF1949C0099BDC9 /* healthid.swift */,
+				59D1E6E42AF19D4C0099BDC9 /* Insurance.swift */,
 			);
 			path = drug_blend;
 			sourceTree = "<group>";
@@ -153,11 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D1E6DF2AF186270099BDC9 /* Doctor_appointment.swift in Sources */,
 				3FBB1EE72AD803D400ADC846 /* mainpage.swift in Sources */,
+				59D1E6DD2AF185EE0099BDC9 /* appointment.swift in Sources */,
 				3F2E812D2ACECC1800564A74 /* ViewController.swift in Sources */,
 				5982C43D2AEE595000B51CC6 /* MyCollectionViewCell.swift in Sources */,
 				595025B52AEBD2940084EDCF /* medicines.swift in Sources */,
 				595025B92AEC02C60084EDCF /* main_medicine_page.swift in Sources */,
+				59D1E6E12AF1928A0099BDC9 /* labtests.swift in Sources */,
+				59D1E6E52AF19D4C0099BDC9 /* Insurance.swift in Sources */,
+				59D1E6E32AF1949C0099BDC9 /* healthid.swift in Sources */,
 				595025B72AEBD8790084EDCF /* myCollectionview.swift in Sources */,
 				3FBB1EE92AD80E3D00ADC846 /* resetpage.swift in Sources */,
 				3F2E812B2ACECC1800564A74 /* AppDelegate.swift in Sources */,

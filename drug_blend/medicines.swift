@@ -15,71 +15,22 @@ class medicines: UIViewController {
 
     @IBOutlet weak var mytable: UITableView!
     
-    var searching = false;
-    var searchedMedicines = [String]()
-    let searchController = UISearchController(searchResultsController: nil)
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchController.loadViewIfNeeded()
-        searchController.searchResultsUpdater = self
-        searchController.searchBar.delegate = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.enablesReturnKeyAutomatically = false
-        searchController.searchBar.returnKeyType = UIReturnKeyType.done
-        navigationItem.searchController = searchController
-        navigationItem.hidesSearchBarWhenScrolling = false
-        definesPresentationContext = true
-        searchController.searchBar.placeholder = "Search Medicines"
     }
 
 }
-extension medicines : UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,UISearchResultsUpdating{
-    func updateSearchResults(for searchController: UISearchController) {
-        let searchText = searchController.searchBar.text!
-        if !searchText.isEmpty
-        {
-            searching = true
-            searchedMedicines.removeAll()
-            for medicineName in medicineNames {
-                if medicineName.uppercased().contains(searchText.uppercased())
-                {
-                    searchedMedicines.append(medicineName)
-                }
-            }
-        }
-        else
-        {
-            searching = false
-            searchedMedicines.removeAll()
-            searchedMedicines = medicineNames
-        }
-        mytable.reloadData()
-    }
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searching = false
-        searchedMedicines.removeAll()
-        mytable.reloadData()
-    }
-    
+extension medicines : UITableViewDelegate,UITableViewDataSource{
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if searching
-        {
-            return searchedMedicines.count
-        }
-        else
-        {
-            return medicineNames.count
-        }
+        
+        return medicineNames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tablecell = mytable.dequeueReusableCell(withIdentifier: "tablecell", for: indexPath)
-        if searching {
-                tablecell.textLabel?.text = searchedMedicines[indexPath.row]
-            } else {
-                tablecell.textLabel?.text = medicineNames[indexPath.row]
-            }
+            tablecell.textLabel?.text = medicineNames[indexPath.row]
             
             return tablecell
     }

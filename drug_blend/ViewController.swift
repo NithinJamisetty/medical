@@ -23,6 +23,11 @@ class ViewController: UIViewController {
             pass.text == "4670"{
                 performSegue(withIdentifier: "main", sender: nil)
             }
+            else{
+                let alert = UIAlertController(title: "Warning", message: "Invalid username or password. Please try again.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var name = name.text!
